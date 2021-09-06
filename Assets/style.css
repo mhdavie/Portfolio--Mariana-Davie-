@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:medium;
@@ -7,10 +12,7 @@ body {
 
 }
 
-main {
-  background-color: rgb(217, 239, 243);
-  
-}
+
 
 
 /* header */
@@ -21,7 +23,7 @@ main {
   margin:0 0 0;
   overflow:left;
   color: rgb(34, 25, 25);
-  background: rgb(34, 32, 32);
+  background: rgba(26, 45, 141, 0.925);
   border-bottom: 1 px solid #ccc;
 }
 
@@ -64,11 +66,9 @@ nav a {
 
 } 
 
-
-
 .side { 
   text-decoration: underline;
-  color:rgb(70, 78, 119);
+  color:rgba(26, 45, 141, 0.925);
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   padding-bottom: 40px;
@@ -76,18 +76,16 @@ nav a {
 }
 
 .container{
-  flex: 4;
-  background-color: rgb(217, 239, 243);;
   display: inline-flex;
+  flex: 4;
+  background-color: rgb(217, 239, 243);
   flex-wrap: wrap;
   justify-content:space-between;
   align-items:flex-start;
   flex-direction: row;
-  
-  
+  padding-top: 10px;  
     
 }
-
 
 
 .box {
@@ -98,12 +96,14 @@ nav a {
 
 }
 
-.box :hover{   
+.box *:hover {   
     background-color: rgb(255, 255, 200);
+
   }
 
 
 .footer{
+  
   display: inline-block;
   text-decoration: underline;
   color:rgb(70, 78, 119);
@@ -113,24 +113,18 @@ nav a {
 
 
 .footer a {  
-  display:inline;
+  display:inline-block;
   margin-right: 50px;
-  padding-top: 50px;
-  
+  margin-top: 30px;  
 }
 
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
   main,
   nav {
     flex-direction: column;
   }
-  
-  aside {
-    order: 2;
-  }
- 
 }
+
 
 
 
