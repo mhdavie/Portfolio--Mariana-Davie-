@@ -12,9 +12,6 @@ body {
 
 }
 
-
-
-
 /* header */
 
 #header {
@@ -44,35 +41,55 @@ body {
 nav {
   float: right;
   margin-top: 55px;
+  flex-wrap: wrap;
 }
 
 nav a {
   display: inline-block;
+  flex-wrap: wrap;
   padding-left: 15px;
   margin-left: 15px;
   line-height: 10px;
   color: rgb(111, 203, 219);
   text-decoration:underline;
+  
 }
 
 
-.image{
-  padding: 0;
-  display:inline-block;
-  margin: 0 auto;
-  max-height: 0%;
-  max-width: 100%;
+
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
 
 
-} 
+.hero-text {
+
+text-align: right;
+position:relative;
+color: white;
+}
+
+/* Main*/
+
 
 .side { 
   text-decoration: underline;
   color:rgba(26, 45, 141, 0.925);
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   padding-top: 30px;
+ 
 }
 
 .container{
@@ -83,21 +100,23 @@ nav a {
   justify-content:space-between;
   align-items:flex-start;
   flex-direction: row;
-  padding-top: 10px;  
-    
+  padding-top: 10px;
+      
 }
 
 
 .box {
+  position: relative;
   border-style: solid;
   border-width: 3px;
   border-color: rgb(111, 203, 219) ;
   flex:0 0 0;
-
+ 
 }
 
-.box *:hover {   
+img :hover {   
     background-color: rgb(255, 255, 200);
+
 
   }
 
@@ -115,13 +134,16 @@ nav a {
 .footer a {  
   display:inline-block;
   margin-right: 50px;
-  margin-top: 30px;  
+  margin-top: 20px;  
 }
 
 @media screen and (max-width: 768px) {
   main,
+  body,
   nav {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 
