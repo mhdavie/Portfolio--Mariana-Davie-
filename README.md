@@ -15,8 +15,9 @@ Layout and content were built using HTML and Bootstrap CSS using Visual Studio C
 
 ## Application 
 
+The following image shows the web application's appearance and functionality:
 
-
+![](./Assets\finalproject.png)
 
 
 
