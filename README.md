@@ -9,7 +9,8 @@ Layout and content were built using HTML and Bootstrap CSS using Visual Studio C
 
 ## Deployed Links
 
-* ['Mariana Davie Portifolio GitHub'](https://github.com/mhdavie/Portfolio--Mariana-Davie-)
-* ['Mariana Davie Portifolio GitHub IO'](https://mhdavie.github.io/Portfolio--Mariana-Davie-/)
+* [Mariana Davie Portifolio GitHub](https://github.com/mhdavie/Portfolio--Mariana-Davie-)
+
+* [Mariana Davie Portifolio Deployed Page](https://mhdavie.github.io/Portfolio--Mariana-Davie-/)
 
 
